@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  OrganizationViewController.swift
 //  Dossiers
 //
 //  Created by Princess Sampson on 9/8/16.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class OrganizationViewController: UIViewController {
+    var organization: Organization?
 
     override func viewDidLoad() {
         super.viewDidLoad()

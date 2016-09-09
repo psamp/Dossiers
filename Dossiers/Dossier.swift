@@ -15,8 +15,7 @@ class Dossier {
     var occupation: String
     var languagesSpoken: [String]
     
-    
-    required init(withName name:String, lastKnownLocation:String, knownAssociates:[String],  occupation: String, languagesSpoken:[String]) {
+    init(name: String, lastKnownLocation: String, knownAssociates: [String],  occupation: String, languagesSpoken: [String]) {
         self.name = name
         self.lastKnownLocation = lastKnownLocation
         self.knownAssociates = knownAssociates
