@@ -32,5 +32,9 @@ extension OrganizationViewController: UITableViewDelegate, UITableViewDataSource
         
         return organization.operatives.count
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("hello from \(indexPath.row)")
+    }
 }
 
