@@ -38,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootViewController = window!.rootViewController as! OrganizationViewController
         rootViewController.organization = org
         
+        
         return true
     }
     

@@ -9,18 +9,28 @@
 import UIKit
 
 class OrganizationViewController: UIViewController {
-    var organization: Organization?
+    @IBOutlet var dossierTable: UITableView!
+    var organization: Organization = Organization(name: "Unknown")
+}
 
+extension OrganizationViewController: UITableViewDelegate, UITableViewDataSource {
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        dossierTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let dossier: Dossier! = organization.operatives[indexPath.row]
+        
+        let cell: UITableViewCell! = dossierTable.dequeueReusableCell(withIdentifier: "cell")
+        cell?.textLabel?.text = dossier.name
+        
+            return cell
     }
-
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return organization.operatives.count
+    }
 }
 
