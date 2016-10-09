@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		743EF7D01D82BCEB007E7E58 /* DossierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743EF7CF1D82BCEB007E7E58 /* DossierViewController.swift */; };
 		74CE35A71D824FC100EEABA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE35A61D824FC100EEABA2 /* AppDelegate.swift */; };
 		74CE35A91D824FC100EEABA2 /* OrganizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE35A81D824FC100EEABA2 /* OrganizationViewController.swift */; };
 		74CE35AC1D824FC200EEABA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CE35AA1D824FC200EEABA2 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		743EF7CF1D82BCEB007E7E58 /* DossierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DossierViewController.swift; sourceTree = "<group>"; };
 		74CE35A31D824FC100EEABA2 /* Dossiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dossiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CE35A61D824FC100EEABA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74CE35A81D824FC100EEABA2 /* OrganizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				74CE35A81D824FC100EEABA2 /* OrganizationViewController.swift */,
 				74CE35C81D82654F00EEABA2 /* Organization.swift */,
 				74CE35AA1D824FC200EEABA2 /* Main.storyboard */,
+				743EF7CF1D82BCEB007E7E58 /* DossierViewController.swift */,
 				74CE35C61D825ED200EEABA2 /* Dossier.swift */,
 				74CE35AD1D824FC200EEABA2 /* Assets.xcassets */,
 				74CE35AF1D824FC200EEABA2 /* LaunchScreen.storyboard */,
@@ -207,6 +210,7 @@
 			files = (
 				74CE35A91D824FC100EEABA2 /* OrganizationViewController.swift in Sources */,
 				74CE35A71D824FC100EEABA2 /* AppDelegate.swift in Sources */,
+				743EF7D01D82BCEB007E7E58 /* DossierViewController.swift in Sources */,
 				74CE35C91D82654F00EEABA2 /* Organization.swift in Sources */,
 				74CE35C71D825ED200EEABA2 /* Dossier.swift in Sources */,
 			);
@@ -412,6 +416,7 @@
 				74CE35C21D824FC800EEABA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74CE35C31D824FC800EEABA2 /* Build configuration list for PBXNativeTarget "DossiersTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				74CE35C51D824FC800EEABA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

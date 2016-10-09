@@ -18,16 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let operatives = [
             Dossier(name: "Bucky Barnes",
+                    codename: "Winter Soldier",
                     lastKnownLocation: "Siberia",
                     knownAssociates: ["Steve Rogers", "Sam Wilson"],
                     occupation: "Sniper",
                     languagesSpoken: ["English", "Russian", "Romanian"]),
             Dossier(name: "Natasha Ramanoff (Natalia Ramanova)",
+                    codename: "Black Widow",
                     lastKnownLocation: "NYC",
                     knownAssociates: ["Clint Barton", "Steve Rogers", "Tony Stark"],
                     occupation: "Superhero and undercover operative",
                     languagesSpoken: ["English", "Russian"]),
             Dossier(name: "Kamala Khan",
+                    codename: "Ms. Marvel",
                     lastKnownLocation: "Jersey City, NJ",
                     knownAssociates: ["Carol Danvers", "Young Avengers"],
                     occupation: "Superhero",
@@ -35,8 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ]
         
         let org = Organization(name: "SHIELD", operatives: operatives)
-        let rootViewController = window!.rootViewController as! OrganizationViewController
-        rootViewController.organization = org
+        let rootViewController = window!.rootViewController as! UINavigationController
+        let ovc = rootViewController.topViewController as! OrganizationViewController
+        ovc.organization = org
         
         
         return true
